@@ -1,0 +1,6 @@
+package com.te.LearnJava8.oops.inheritance;
+
+public class Parent {
+	String name="Mahi";
+
+}

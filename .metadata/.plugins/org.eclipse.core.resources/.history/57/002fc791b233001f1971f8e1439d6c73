@@ -1,0 +1,9 @@
+package com.te.LearnJava8.designPatterns.factory;
+
+public class AndroidMain {
+	public static void main(String[] args) {
+		AndroidOS color = OsFactory.getOs("colors");
+		color.performance();
+	}
+
+}

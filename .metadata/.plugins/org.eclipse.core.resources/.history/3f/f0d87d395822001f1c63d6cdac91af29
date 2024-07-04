@@ -1,0 +1,21 @@
+package com.te.LearnJava8.oops.inheritance;
+
+public class Child {
+	int b=10;
+
+	public Child() {
+		super();
+		System.out.println("B super:"+super.hashCode());
+		System.out.println("B this:"+this.hashCode());
+	}
+	
+	@Override
+	public String toString() {
+		return "Child [b=" + b + "]";
+	}
+
+	public static void main(String[] args) {
+		
+	}
+
+}

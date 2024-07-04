@@ -1,0 +1,26 @@
+package com.te.LearnJava8.designPatterns.factory;
+
+public class OxygenOS implements AndroidOS {
+
+	@Override
+	public void performance() {
+		// TODO Auto-generated method stub
+		System.out.println("AndroidOS performance() ");
+		
+	}
+
+	@Override
+	public void security() {
+		// TODO Auto-generated method stub
+		System.out.println("AndroidOS security");
+		
+	}
+
+	@Override
+	public void ui() {
+		// TODO Auto-generated method stub
+		System.out.println("AndroidOS ui()");
+		
+	}
+
+}

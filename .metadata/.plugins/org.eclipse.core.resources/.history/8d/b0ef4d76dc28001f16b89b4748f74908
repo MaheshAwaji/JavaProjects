@@ -1,0 +1,41 @@
+package com.te.LearnJava8.ObjectClass;
+
+public class ShallowCopy implements Cloneable {
+	String name;
+	int id;
+	Student student;
+	
+	
+	
+	public ShallowCopy() {
+		super();
+	}
+
+	public ShallowCopy(String name, int id, Student student) {
+		super();
+		this.name = name;
+		this.id = id;
+		this.student = student;
+	}
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		ShallowCopy copy=(ShallowCopy) super.clone();
+	
+		return copy;
+	}
+	
+	@Override
+	public String toString() {
+		return "ShallowCopy [name=" + name + ", id=" + id + ", student=" + student + "]";
+	}
+
+	public static void main(String[] args) throws CloneNotSupportedException {
+		Student student=new Student("Mahesh", 02, 1234567l);
+		ShallowCopy copy=new ShallowCopy("Giridhar", 2, student);
+		ShallowCopy copy2=(ShallowCopy) copy.clone();
+		copy2.id=3;
+		System.out.println(copy);
+		System.out.println(copy2);
+	}
+
+}

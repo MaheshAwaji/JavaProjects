@@ -1,0 +1,13 @@
+package com.te.LearnJava8.java8Features.streamAPI;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class LearnPeak {
+	public static void main(String[] args) {
+		List<String> list=Arrays.asList("Mahesh","Suresh","Rakesh","Ram","Sita");
+		list.stream().peek(name->System.out.println("Before filter: "+name)).filter(s->s.length()<3).peek(name->System.out.println("After Filter"+name)).forEach(result->System.out.println(result));
+		
+	}
+
+}

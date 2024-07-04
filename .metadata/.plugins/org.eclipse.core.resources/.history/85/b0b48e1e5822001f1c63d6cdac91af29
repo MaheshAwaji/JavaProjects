@@ -1,0 +1,5 @@
+package com.te.LearnJava8.oops.inheritance;
+
+public class Child {
+
+}

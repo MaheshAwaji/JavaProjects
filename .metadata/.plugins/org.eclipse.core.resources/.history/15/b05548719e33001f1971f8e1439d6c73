@@ -1,0 +1,67 @@
+package com.te.LearnJava8.designPatterns.builder;
+
+import java.time.LocalDate;
+
+public class LearnBuilder1 {
+	
+	private int emp_Id;
+	private String emp_Name;
+	private double emp_Salary;
+	private String emp_Address;
+	private long emp_MobileNumber;
+	private LocalDate emp_DOB;
+	private boolean emp_MaritalStatus;
+	private int emp_Age;
+	public int getEmp_Id() {
+		return emp_Id;
+	}
+	public Employee setEmp_Id(int emp_Id) {
+		this.emp_Id = emp_Id;
+		return employee;
+	}
+	public String getEmp_Name() {
+		return emp_Name;
+	}
+	public void setEmp_Name(String emp_Name) {
+		this.emp_Name = emp_Name;
+	}
+	public double getEmp_Salary() {
+		return emp_Salary;
+	}
+	public void setEmp_Salary(double emp_Salary) {
+		this.emp_Salary = emp_Salary;
+	}
+	public String getEmp_Address() {
+		return emp_Address;
+	}
+	public void setEmp_Address(String emp_Address) {
+		this.emp_Address = emp_Address;
+	}
+	public long getEmp_MobileNumber() {
+		return emp_MobileNumber;
+	}
+	public void setEmp_MobileNumber(long emp_MobileNumber) {
+		this.emp_MobileNumber = emp_MobileNumber;
+	}
+	public LocalDate getEmp_DOB() {
+		return emp_DOB;
+	}
+	public void setEmp_DOB(LocalDate emp_DOB) {
+		this.emp_DOB = emp_DOB;
+	}
+	public boolean isEmp_MaritalStatus() {
+		return emp_MaritalStatus;
+	}
+	public void setEmp_MaritalStatus(boolean emp_MaritalStatus) {
+		this.emp_MaritalStatus = emp_MaritalStatus;
+	}
+	public int getEmp_Age() {
+		return emp_Age;
+	}
+	public void setEmp_Age(int emp_Age) {
+		this.emp_Age = emp_Age;
+	}
+	
+	
+
+}

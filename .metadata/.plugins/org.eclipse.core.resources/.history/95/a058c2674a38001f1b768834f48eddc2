@@ -1,0 +1,39 @@
+package com.te.servelet1;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.mysql.jdbc.Driver;
+
+public class LoginJDBC {
+	private static Driver driver;
+	private static Connection connection;
+	private static Statement statement;
+	private static String query;
+
+	
+
+	private static void openConnection() throws ClassNotFoundException, SQLException {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		driver=new Driver();
+		DriverManager.registerDriver(driver);
+		connection  = DriverManager.getConnection("jdbc:MySql://localhost:3306/learnjdbc?user=root&&password=root");
+	
+	}
+	
+	private static void closeConnection() throws SQLException {
+		if (statement!=null) {
+			statement.close();	
+		}
+		if (connection!=null) {
+			connection.close();
+		}
+		if (driver!=null) {
+			DriverManager.deregisterDriver(driver);
+			
+		}
+	}
+
+}

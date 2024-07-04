@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div align="center">
+		<form action="MyServelet_2" method="post">
+			<table>
+				<tr>
+					<td>Name</td>
+					<td><input type="text" name="name"></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="text" name="email"></td>
+				</tr>
+				<tr>
+					<td>Mobile</td>
+					<td><input type="text" name="mobile"></td>
+				</tr>
+				<tr>
+					<td colspan="1">Courses</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="course" value="SQL"></td>
+					<td>SQL</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="course" value="JAVA"></td>
+					<td>JAVA</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="course" value="WEBTECH"></td>
+					<td>WEBTECH</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="course" value="J2EE"></td>
+					<td>J2EE</td>
+				</tr>
+			</table>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

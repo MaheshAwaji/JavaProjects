@@ -1,0 +1,12 @@
+package com.te.LearnJava8.designPatterns.singleton;
+
+public class ViratKohli {
+	
+	private String name;
+	private int age;
+	
+	private ViratKohli() {
+	}
+	
+
+}

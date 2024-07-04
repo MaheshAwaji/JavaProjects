@@ -1,0 +1,35 @@
+package com.te.LearnJava8.oops.inheritance;
+
+import java.util.Objects;
+
+public class Child extends Parent {
+	int b=10;
+
+	public Child() {
+		super();
+		System.out.println("B super:"+super.hashCode());
+		System.out.println("B this:"+this.hashCode());
+		this.Add();
+	}
+	
+	public  void Add() {
+		System.out.println("Child-Add");
+	}
+
+	@Override
+	public String toString() {
+		return "Child [b=" + b + "]";
+	}
+
+	public static void main(String[] args) {
+		int b=2;
+		Child child=new Child();
+		Parent parent=new Parent();
+		Child child2=new Child();
+		System.out.println(b);
+//		child.Add();
+//		parent.Add();
+		
+	}
+
+}

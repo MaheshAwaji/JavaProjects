@@ -1,0 +1,47 @@
+package com.te.LearnJava8.java8Features.streamAPI;
+
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class EmployeeManagerMain {
+	public static void main(String[] args) {
+		List<Employee> employees = Arrays.asList(
+				new Employee(02, "mahesh", 25, "Development", 40000, LocalDate.of(2018, 7, 17)),
+				new Employee(03, "suresh", 26, "Development", 26000, LocalDate.of(2017, 6, 18)),
+				new Employee(01, "akash", 27, "Development", 29000, LocalDate.of(2019, 9, 20)),
+				new Employee(05, "ramesh", 25, "Development", 25000, LocalDate.of(2022, 10, 25)),
+				new Employee(06, "vijay", 25, "Development", 30000, LocalDate.of(2023, 07, 17)));
+		
+		LocalDate currentDate = LocalDate.now();
+		for (Employee employee : employees) {
+			int experience=Period.between(employee.getEmployee_joiningDate(), currentDate).getYears();
+//			employee.setEmployee_salary(2000);
+			if (experience>=2) {
+				double currentSal=employee.getEmployee_salary();			
+				employee.setEmployee_salary(employee.getEmployee_salary()*1.5);
+			}else {
+				employee.setEmployee_salary(employee.getEmployee_salary()*1.2);
+			}
+		}
+		
+	for (Employee employee2 : employees) {
+		System.out.println(employee2);
+		
+	}
+		
+		
+		
+		employees.stream().map(employee->{
+			int experience=Period.between(employee.getEmployee_joiningDate(), currentDate).getYears();
+			
+			System.out.println(employee);
+			return experience;
+		});
+	}
+	
+}
+
+

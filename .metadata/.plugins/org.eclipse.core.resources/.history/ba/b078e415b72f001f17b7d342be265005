@@ -1,0 +1,15 @@
+package com.te.LearnJava8.java8Features.streamAPI;
+
+import java.time.LocalDate;
+import java.util.List;
+
+public class EmployeeManagerMain {
+	public static void main(String[] args) {
+		Employee[] employees= {new Employee(02, "mahesh", 25, "Development", 25000,LocalDate.of(2018, 07, 17) ),
+				new Employee(03, "suresh", 26, "Development", 26000,LocalDate.of(2017, 06, 18) ),
+				new Employee(02, "mahesh", 25, "Development", 25000,LocalDate.of(2018, 07, 17) ),
+				new Employee(02, "mahesh", 25, "Development", 25000,LocalDate.of(2018, 07, 17) ),
+				new Employee(02, "mahesh", 25, "Development", 25000,LocalDate.of(2018, 07, 17) )};
+	}
+
+}
