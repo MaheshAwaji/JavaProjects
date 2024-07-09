@@ -1,8 +1,0 @@
-package com.te.LearnJava8.designPatterns.singleton;
-
-public class LearnSingleton {
-	public static void main(String[] args) {
-		
-	}
-
-}

@@ -1,8 +1,0 @@
-package com.te.LearnJava8.designPatterns.builder;
-
-public class BuilderMain {
-	public static void main(String[] args) {
-		new LearnBuilder1();
-	}
-
-}
