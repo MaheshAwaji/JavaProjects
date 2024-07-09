@@ -6,7 +6,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 
 import lombok.AllArgsConstructor;
@@ -31,7 +30,6 @@ public class Student {
 	private String name;
 	private String email;
 	@ManyToMany
-	@JoinTable(name = "JoinTable")
 	private List<Subject> subjects;
 
 }
