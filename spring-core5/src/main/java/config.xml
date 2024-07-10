@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans 
+		https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util 
+		https://www.springframework.org/schema/util/spring-util.xsd
+		http://www.springframework.org/schema/context
+		https://www.springframework.org/schema/context/spring-context.xsd">
+		
+		
+	<bean class="com.te.springCore.entity.Address" name="address1">
+		<constructor-arg value="123456" />
+		<constructor-arg value="Pune" />
+		<constructor-arg value="Maharashtra" />
+	</bean>
+	
+	
+
+	<!-- Autowiring by using XML congig-->
+	<bean class="com.te.springCore.entity.Employee" name="employee1" autowire="byName">
+		
+		<property name="employeeId" value="123"/>
+		<property name="employeeName" value="Mahesh Awaji"/>
+		<property name="mobile" value="1234234324"/>
+	</bean>
+
+
+</beans>
