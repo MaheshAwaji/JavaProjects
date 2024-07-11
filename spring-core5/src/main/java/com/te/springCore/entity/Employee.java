@@ -15,6 +15,12 @@ public class Employee   {
 		this.mobile = mobile;
 		this.address = address;
 	}
+	public Employee(int employeeId, String employeeName, long mobile) {
+		super();
+		this.employeeId = employeeId;
+		this.employeeName = employeeName;
+		this.mobile = mobile;
+	}
 	public Employee() {
 		super();
 		// TODO Auto-generated constructor stub

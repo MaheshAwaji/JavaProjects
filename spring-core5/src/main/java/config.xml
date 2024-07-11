@@ -11,23 +11,31 @@
 		https://www.springframework.org/schema/util/spring-util.xsd
 		http://www.springframework.org/schema/context
 		https://www.springframework.org/schema/context/spring-context.xsd">
-		
-		
-	<bean class="com.te.springCore.entity.Address" name="address1">
+
+
+	<bean class="com.te.springCore.entity.Address" name="address">
 		<constructor-arg value="123456" />
 		<constructor-arg value="Pune" />
 		<constructor-arg value="Maharashtra" />
 	</bean>
-	
-	
-
-	<!-- Autowiring by using XML congig-->
-	<bean class="com.te.springCore.entity.Employee" name="employee1" autowire="byName">
-		
-		<property name="employeeId" value="123"/>
-		<property name="employeeName" value="Mahesh Awaji"/>
-		<property name="mobile" value="1234234324"/>
+	<bean class="com.te.springCore.entity.Address" name="address2">
+		<constructor-arg value="654321" />
+		<constructor-arg value="Bangalore" />
+		<constructor-arg value="Karnataka" />
 	</bean>
+
+
+
+	<!-- Autowiring by using XML config byName -->
+	<bean class="com.te.springCore.entity.Employee" name="employee1"
+		autowire="byName">
+		<constructor-arg  value="123" />
+		<constructor-arg  value="Mahesh Awaji" />
+		<constructor-arg  value="1234234324" />
+	</bean>
+	
+	
+	
 
 
 </beans>
