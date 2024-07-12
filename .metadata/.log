@@ -6678,3 +6678,161 @@ Caused by: java.io.IOException: The pipe is being closed
 	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
 	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
 	... 12 more
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-07-12 12:38:23.376
+!MESSAGE org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:519)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:287)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy12/jdk.proxy12.$Proxy34.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:517)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2024-07-12 18:32:00.846
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2024-07-12 18:32:00.846
+!MESSAGE Multiple Contexts have a path of "/spring-mvc-app1".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2024-07-12 18:32:07.476
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2024-07-12 18:32:07.476
+!MESSAGE Multiple Contexts have a path of "/spring-mvc-app1".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2024-07-12 18:32:09.394
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2024-07-12 18:32:09.394
+!MESSAGE Multiple Contexts have a path of "/spring-mvc-app1".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2024-07-12 18:33:21.789
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2024-07-12 18:33:21.789
+!MESSAGE Multiple Contexts have a path of "/spring-mvc-app1".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2024-07-12 18:33:50.632
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2024-07-12 18:33:50.632
+!MESSAGE Multiple Contexts have a path of "/spring-mvc-app1".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2024-07-12 18:34:13.834
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2024-07-12 18:34:13.834
+!MESSAGE Multiple Contexts have a path of "/spring-mvc-app1".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2024-07-12 18:35:31.198
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2024-07-12 18:35:31.198
+!MESSAGE Multiple Contexts have a path of "/spring-mvc-app1".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2024-07-12 18:35:39.166
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2024-07-12 18:35:39.166
+!MESSAGE Multiple Contexts have a path of "/spring-mvc-app1".
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2024-07-12 18:36:00.599
+!MESSAGE Connection to https://www.caucho.com/eclipse/site.xml failed on Remote host terminated the handshake. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at java.base/sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1719)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1518)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1425)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:273)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:241)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:148)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1001)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1510)
+	... 30 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2024-07-12 18:36:01.753
+!MESSAGE Connection to https://www.caucho.com/eclipse/p2.index failed on Remote host terminated the handshake. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at java.base/sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1719)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1518)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1425)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:273)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:241)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:148)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1001)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1510)
+	... 30 more

@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-//@ComponentScan("com.te.springCore")//When you are using @Component for creating bean then you have to use thi
+//@ComponentScan("com.te.springCore")//When you are using @Component for creating bean then you have to use this
 public class JavaConfiguration {
 	
 	
