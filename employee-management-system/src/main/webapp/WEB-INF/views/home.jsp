@@ -4,16 +4,17 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Home Page</title>
+<title>Home</title>
 </head>
-<body >
+<body>
+
 	<%
-	String name = (String) request.getAttribute("name");
+	String empId = (String) request.getAttribute("empId");
 	%>
-	<h1>This Home Page</h1>
-	<h1>Called by Home Controller</h1>
-	<h1 >
-		My Name is
-		<%=name%></h1>
+
+	<h1>This is your HOME page!</h1>
+	<h3>
+		This is your employee ID:
+		<%=empId%></h3>
 </body>
 </html>

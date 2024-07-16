@@ -15,6 +15,7 @@
 	/* LocalDateTime time=(LocalDateTime)request.getAttribute("time"); */
 	//I am using Expression Language ${  id name from controller}
 	%>
+	<!-- Using Spring Expression Language -->
 	<h1>This About Page</h1>
 	<h1>Called by About Controller</h1>
 	<h1>

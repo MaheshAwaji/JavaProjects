@@ -14,8 +14,8 @@ public class HomeController {
 	@RequestMapping(path = "/home",method = RequestMethod.GET)
 	public String home(Model model){
 		model.addAttribute("name", "Mahesh Awaji");
-		System.out.println("this is home url ");
-		return "index";
+		System.out.println("this is index url ");
+		return "home";
 	}
 	@RequestMapping("/about")
 	public ModelAndView about() {
